@@ -2,18 +2,30 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/kursor.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ayb8ike.css">
+    <!--<script src="assets/js/jquery-min.js"></script>-->
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/particles.js"></script>
 
+
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+    <script src="assets/js/kursor.js"></script>
     <script src="assets/js/script.js"></script>
+
     <title>Quantical Solutions</title>
 </head>
 <body >
 <div id="bg"></div>
 
-<div id="main">
+
+<div id="main" class="page">
+    <div class="cursor cursor--small"></div>
+    <canvas class="cursor cursor--canvas" resize></canvas>
     <div id="nav">
         <div id="horizontal">
 
@@ -24,10 +36,22 @@
     </div>
     <div id="title" class="fullScreen">
         <div id="slogan">
-            PETIT SLOGAN
+            <h1>
+                <span>
+                    PETIT SLOGAN
+                </span>
+                <span>
+                    COOL
+                </span>
+            </h1>
         </div>
         <div id="subtitle">
-            COOL
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </span>
+            <span>
+                Quisque feugiat urna ac risus commodo, ac viverra
+            </span>
         </div>
     </div>
     <div id="who" class="fullScreen">

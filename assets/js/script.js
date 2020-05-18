@@ -1,16 +1,29 @@
+
+
 window.onload = function () {
+    createCursor();
+    getHeight();
+    loadParticles();
+};
+
+window.onresize = function () {
     getHeight();
 };
 
-function getHeight(){
-    var nb = document.querySelectorAll(".fullScreen").length;
-    loadParticles(nb);
+function createCursor(){
+    new kursor({
+        type:4,
+        removeDefaultCursor: true,
+        color: "#FFF"
+    })
 }
 
-function loadParticles(nb){
-    console.log(nb);
-    document.querySelector("#bg").style.height = nb * 100 + "vh";
+function getHeight(){
+    var elmtHeight = document.querySelector("#main").offsetHeight;
+    document.querySelector("#bg").style.height = elmtHeight + "px";
+}
 
+function loadParticles(){
     particlesJS.load('bg', 'assets/particles.json', function() {
         console.log('callback - particles.js config loaded');
     });
