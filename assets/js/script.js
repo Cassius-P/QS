@@ -2,13 +2,13 @@
 
 window.onload = function () {
     //createCursor();
-    getHeight();
+    //getHeight();
     loadParticles();
 
 };
 
 window.onresize = function () {
-    getHeight();
+    //getHeight();
 };
 
 function createCursor(){
@@ -21,7 +21,7 @@ function createCursor(){
 
 function getHeight(){
     var elmtHeight = document.querySelector("#main").offsetHeight;
-    document.querySelector("#bg").style.height = elmtHeight + "px";
+    document.querySelector("#main").style.height = elmtHeight + "px";
 }
 
 function loadParticles(){
@@ -31,15 +31,17 @@ function loadParticles(){
 }
 
 
+var main = document.querySelector("#main");
 
-
-$(window).scroll(function() {
+main.scroll(function() {
 
     var parts = document.querySelector("#parts");
 
-    if (window.scrollY >= "1000") {
+    if (main.scrollY >= "1000") {
+
+        console.log("<1000");
         var scrollFrom = (window.scrollY - 1000)*5 ;
-        parts.scroll({top : 0, left : scrollFrom, behavior:"auto"});
+        parts.scroll(scrollFrom, 0);
 
     } else {
         console.log("<1000");
