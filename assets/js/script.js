@@ -1,9 +1,10 @@
 
 
 window.onload = function () {
-    createCursor();
+    //createCursor();
     getHeight();
     loadParticles();
+
 };
 
 window.onresize = function () {
@@ -25,6 +26,6 @@ function getHeight(){
 
 function loadParticles(){
     particlesJS.load('bg', 'assets/particles.json', function() {
-        console.log('callback - particles.js config loaded');
+        console.log("Particles loaded succefully")
     });
 }
