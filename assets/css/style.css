@@ -116,7 +116,7 @@ body{
     top: calc(0px - 15%);
     height: 100%;
     overflow-x: scroll;
-
+    z-index: 1;
 }
 #parts::-webkit-scrollbar {
     display: none;
@@ -130,7 +130,9 @@ body{
     font-size: 35em;
     white-space: nowrap;
     margin: 0;
-}#parts h2::-webkit-scrollbar {
+    text-transform: uppercase;
+}
+#parts h2::-webkit-scrollbar {
     display: none;
 }
 
@@ -199,6 +201,7 @@ body{
     height: 100%;
     justify-content: space-around;
     text-align: start;
+    z-index: 2;
 }
 #team section:nth-child(2){
     margin: 15% 0 0 0;
@@ -226,4 +229,8 @@ body{
 }
 .resume{
     line-height: 1.6em;
+    color: #707070
+}
+.lightResume{
+    color: white;
 }
