@@ -1,0 +1,62 @@
+#eventPage {}
+
+section {
+    position: relative;
+    color: aliceblue;
+}
+
+#eventHead {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eventDetails {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eventTitle {
+    position: absolute
+}
+
+#eventContent {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#eventDescription {
+    position: absolute;
+    flex-grow: 1;
+    order: 1;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+p #eventDescription{
+
+}
+
+img #eventContent{
+    position: absolute;
+    flex-grow: 1;
+    order: 2;
+}
+
+#eventForm {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eventCarousel {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
