@@ -31,22 +31,20 @@ function loadParticles(){
 }
 
 
-var main = document.querySelector("#main");
-console.log(main);
 
-main.scroll(function() {
+
+$('#main').scroll( function() {
 
     var parts = document.querySelector("#parts");
+    var scrolled = this.scrollTop;
 
-    if (main.scrollY >= "1000") {
+    if ( scrolled >= 1000) {
 
-        console.log("<1000");
-        var scrollFrom = (window.scrollY - 1000)*5 ;
+        console.log(scrolled+"YES");
+        var scrollFrom = (scrolled - 1000)*5 ;
         parts.scroll(scrollFrom, 0);
 
     } else {
-        console.log("<1000");
-
-
+        console.log(scrolled);
     }
 });

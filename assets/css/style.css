@@ -130,7 +130,15 @@ body{
     font-size: 35em;
     white-space: nowrap;
     margin: 0;
+}#parts h2::-webkit-scrollbar {
+    display: none;
 }
+
+ #scroll{
+     font-size: x-large;
+     color: #FFFFFF;
+     text-align: center;
+ }
 
 .sticky {
     position: sticky!important;
