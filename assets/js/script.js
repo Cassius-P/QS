@@ -32,6 +32,7 @@ function loadParticles(){
 
 
 var main = document.querySelector("#main");
+console.log(main);
 
 main.scroll(function() {
 
