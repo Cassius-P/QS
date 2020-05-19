@@ -183,3 +183,47 @@ body{
 #who{
 
 }
+#team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 91%;
+    height: 75vh;
+    padding: 0 2% 0 7%;
+}
+
+#team section{
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    height: 100%;
+    justify-content: space-around;
+    text-align: start;
+}
+#team section:nth-child(2){
+    margin: 15% 0 0 0;
+}
+#team section:nth-child(4){
+    margin: 25% 0 0 0;
+}
+.personPhoto{
+    background: #FFFFFF;
+    width: 100%;
+    height: 45%;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.infos span:first-of-type{
+    text-transform: capitalize;
+    font-size: 2em;
+    color: #DCB97D;
+}
+.infos span:last-of-type{
+    text-transform: uppercase;
+}
+.resume{
+    line-height: 1.6em;
+}
