@@ -207,7 +207,7 @@ body{
     margin: 15% 0 0 0;
 }
 #team section:nth-child(4){
-    margin: 25% 0 0 0;
+    margin: 40% 0 0 0;
 }
 .personPhoto{
     background: #FFFFFF;
@@ -233,4 +233,17 @@ body{
 }
 .lightResume{
     color: white;
+}
+
+#services{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    height: 100%;
+    width: 100%;
+}
+.services{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
 }
