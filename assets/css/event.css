@@ -1,3 +1,19 @@
+.gold{
+    color: #deb571;
+}
+.white{
+    color: #f8f8f8
+}
+.silver{
+    color: #cfcdcc
+}
+.grey{
+    color: #4a4a49
+}
+.black{
+    color: #0a0a0a
+}
+
 #eventPage {}
 
 section {
@@ -18,40 +34,56 @@ section {
 }
 
 #eventTitle {
-    position: absolute
+    /* position: absolute */
 }
 
-#eventContent {
+.container {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
 }
 
-#eventDescription {
-    position: absolute;
-    flex-grow: 1;
-    order: 1;
-
+.content {
+    /* position: absolute; */
+    width: 50%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    align-items: center;
 }
-p #eventDescription{
+.content>p{
+width: 40%;
+}
+.content>button{
+    color: #f8f8f8;
+    background-color: #deb571;
+    width: 25%;
+    height: auto;
 
+    border-style: none;
 }
 
-img #eventContent{
-    position: absolute;
-    flex-grow: 1;
-    order: 2;
+
+.container>img {
+   width: 50%;
+    height: auto;
 }
 
-#eventForm {
-    justify-content: center;
-    flex-direction: column;
+
+#eventPrice{
+  
+}
+#eventInfo>img{
+}
+
+#eventForm>form {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
     align-items: center;
 }
 
