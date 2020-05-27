@@ -1,15 +1,50 @@
-#eventPage {}
+/* =====  ===== */
 
-section {
-    position: relative;
-    color: aliceblue;
+* {
+    color: #f8f8f8;
 }
 
-#eventHead {
+/* gold #deb571
+white #f8f8f8
+silver #cfcdcc
+grey #4a4a49
+black #0a0a0a */
+
+/* ===== HEADER ===== */
+
+.eventHeader {
+    background-image: url("../images/event/mimi-thian-ZKBzlifgkgw-unsplashflou.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    font-weight: bold;
 }
+
+.eventDate {
+    font-size: 2.5em;
+    color: #f8f8f8;
+}
+
+.pageTitle {
+    font-size: 5em;
+    color: #f8f8f8;
+    padding: 0% 10%;
+}
+
+.eventHour {
+    font-size: 2.5em;
+    color: #deb571;
+}
+
+.eventDirection {
+    font-size: 1.5em;
+    color: #f8f8f8;
+}
+
+/* ===== DESCRIPTION ===== */
 
 #eventDetails {
     justify-content: center;
@@ -17,46 +52,117 @@ section {
     align-items: center;
 }
 
-#eventTitle {
-    position: absolute
-}
-
-#eventContent {
+.container {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+}
+
+.content {
+    color: #f8f8f8;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content>p {
+    /* width: 40%; */
+    padding: 0% 5%;
+    text-align: justify;
+}
+
+.firstText {
+    margin: 0 5% 0 10%;
+}
+
+.secondText {
+    margin: 0 10% 0 5%;
+}
+
+.articleTitle {
+    color: #deb571;
+    padding: 5% 15% 0 15%;
+}
+
+.content>button {
+    color: #f8f8f8;
+    background-color: #deb571;
+    width: 25%;
+    height: auto;
+    border-style: none;
+}
+
+.container>img {
+    width: 45%;
+    height: auto;
+}
+
+/* ===== FORMULAIRE ===== */
+
+#eventForm {
+    /*   
+    position: relative;
+
+    justify-content: center;
+    text-align: center;
+    align-items: center; */
+    margin: 0 20%
+}
+
+.formTitle {
+    color: #deb571;
+    padding: 0 5%;
+}
+
+.formDetails {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.formBox {
+    display: block;
+    color: #f8f8f8;
+}
+
+/* .formIdentity {
+    display: inline-block
+} */
+
+.input {
+    background-color: #0a0a0a;
+    border: #deb571 solid 1px;
+}
+
+.formButton {
+    color: #deb571;
+    background-color: #0a0a0a;
+    border-bottom: none;
+    border-top: #deb571 solid 1px;
+    border-left: #deb571 solid 1px;
+    border-right: #deb571 solid 1px;
+}
+
+/* ===== CAROUSEL ===== */
+
+.carousel {
+    /* position: relative; */
+    display: flex;
+    /* flex-wrap: nowrap ; */
+    justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-#eventDescription {
-    position: absolute;
-    flex-grow: 1;
-    order: 1;
+/* .item{
+    width: 50%;
+} */
 
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-p #eventDescription{
-
-}
-
-img #eventContent{
-    position: absolute;
-    flex-grow: 1;
-    order: 2;
-}
-
-#eventForm {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-#eventCarousel {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.goldBorder {
+    border: 1px solid #deb571;
 }

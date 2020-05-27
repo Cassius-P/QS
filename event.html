@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="assets/css/reboot.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/kursor.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsiveCol.css">
     <link rel="stylesheet" href="assets/css/event.css">
     <link rel="stylesheet" href="https://use.typekit.net/ayb8ike.css">
-    <!--<script src="assets/js/jquery-min.js"></script>-->
 
+    <link rel="stylesheet" href="/assets/vendor/owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/vendor/owlcarousel/dist/assets/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- <script src="assets/js/jquery-min.js"></script> -->
+
+
 
     <title>Evènements</title>
 </head>
@@ -33,82 +43,102 @@
 
     <main id="eventPage" class="page">
 
-        <section id="eventHead" class="">
-            <div id="" class=" eventView">
-                <p>07 Janvier 2020</p>
+        <section id="" class="large-6 eventHeader">
+            <div class=" eventView">
+                <p class="eventDate">07 Janvier 2020</p>
                 <div>
-                    <h1>TITRE DE L'EVENEMENT</h1>
-                    <p>20h-21h</p>
+                    <h1 class="pageTitle">TITRE DE L'EVENEMENT</h1>
+                    <p class="eventHour">20h-21h</p>
                 </div>
-                <p>30 rue des vivants BORDEAUX</p>
-                <div>polygone</div>
+                <p class="eventDirection">30 rue des vivants BORDEAUX</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="74.734" height="76.53" viewBox="0 0 74.734 76.53">
+                    <g id="Polygone_5" data-name="Polygone 5" transform="translate(0 50.073) rotate(-60)" fill="none">
+                        <path d="M28.91,0,57.82,52.913H0Z" stroke="none" />
+                        <path
+                            d="M 28.90994071960449 4.171291351318359 L 3.371772766113281 50.91329956054688 L 54.4481086730957 50.91329956054688 L 28.90994071960449 4.171291351318359 M 28.90994071960449 0 L 57.81988143920898 52.91329956054688 L 0 52.91329956054688 L 28.90994071960449 0 Z"
+                            stroke="none" fill="#f8f8f8" />
+                    </g>
+                </svg>
             </div>
-            <div id="socialNetwork">
-                <i>FB</i>
-                <i>TW</i>
-                <i>Insta</i>
-                <i>LinkdIn</i>
-            </div>
+
         </section>
 
 
         <section id="eventDetails">
-            <div id="eventTitle">
-                <h1>Description de l'événement</h1>
+            <div id="eventTitle" class="gold">
+                <h1 class="articleTitle">DESCRIPTION DE L'EVENEMENT</h1>
             </div>
-            <div id="eventContent">
-                <div id="eventDescription">
+            <div class="container">
+                <div class="content firstText white large-3">
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Aut quae iusto amet, dolore quia ratione fuga ducimus vel.
-                        Ea, cum veritatis! Incidunt maiores assumenda sit eligendi voluptatem soluta libero quia?
-                    </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Aut quae iusto amet, dolore quia ratione fuga ducimus vel.
-                        Ea, cum veritatis! Incidunt maiores assumenda sit eligendi voluptatem soluta libero quia?
-                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p> Quisque feugiat urna ac risus commodo, ac viverra velit hendrerit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque feugiat urna ac risus commodo, ac viverra velit hendrerit.
+                        Nullam vitae lectus maximus, faucibus enim a, cursus nisi. </p>
                 </div>
-                <img src="./assets/images/event/jeshoots-com-p8kaVRe4edM-unsplash.png" alt="">
+                <img class=" rightImg large-5" src="./assets/images/event/jeshoots-com-p8kaVRe4edM-unsplash.png" alt="">
 
 
             </div>
-<!-- 
-            <div id="eventInfo" class="fullScreen">
+
+            <div class="container  fullScreen">
                 <img src="./assets/images/event/airam-dato-on-t_rxW1yGpSU-unsplash.png" alt="">
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Aut quae iusto amet, dolore quia ratione fuga ducimus vel.
-                    Ea, cum veritatis! Incidunt maiores assumenda sit eligendi voluptatem soluta libero quia?
-                </p>
-                <h1>TARIF</h1>
-                <h1>GRATUIT</h1>
-            </div> -->
+                <div class="content secondText white">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Aut quae iusto amet, dolore quia ratione fuga ducimus vel.
+                        Ea, cum veritatis! Incidunt maiores assumenda sit eligendi voluptatem soluta libero quia?
+                    </p>
+                    <h1 class="articleTitle">TARIF</h1>
+                    <button>GRATUIT</button>
+                </div>
+            </div>
 
 
         </section>
 
 
-        <section id="eventForm">
-            <form action="">
-                <h1>INSCRIPTION</h1>
+        <section id="eventForm" class="goldBorder">
+            <h1 class="formTitle">INSCRIPTION</h1>
+            <form class="formDetails" action="">
+                <!-- <div class="formIdentity"> -->
+                <div class="formBox">
                 <label for="name">NOM</label>
-                <input type="text" name="name">
-                <label for="surname">¨PRENOM</label>
-                <input type="text" name="surname">
+                <input class="input" type="text" name="name"></div>
+                
+                <div class="formBox">
+                <label for="surname">PRENOM</label>
+                <input class="input" type="text" name="surname"></div>
+            <!-- </div> -->
+               
+                <div class="formBox">
                 <label for="mail">ADRESSE E-MAIL</label>
-                <input type="mail" name="mail">
-                <button type="submit">S'INSCRIRE</button>
-            </form>
+                <input class="input" type="mail" name="mail"></div>
+                
+                
+                <button class="formButton" type="submit">S'INSCRIRE</button>
+                 </form>
         </section>
 
 
         <section id="eventCarousel">
-            <div>
-                <h1>EVENEMENTS SIMILAIRES</h1>
-                <div>gauche</div>
-                <p>ici vient le caroussel</p>
-                <div>droite</div>
+            <h1>EVENEMENTS SIMILAIRES</h1>
+            <!-- <img src="assets/images/event/Polygone 1.png" alt=""> -->
+
+            <div class="owl-carousel owl-theme carousel xLarge-4 large-4 medium-12 small-12 xSmall-12">
+                <!-- <div>
+                    <img src="assets/images/event/florian-olivo-4hbJ-eymZ1o-unsplash.png" alt="">
+                    <div>
+                        <h1>Titre de l'évènement</h1>
+                        <h1>PRIX</h1>
+                    </div> -->
             </div>
+
+
+
+            <!-- <img src="assets/images/event/Polygone 2.png" alt=""> -->
+
         </section>
 
 
@@ -125,6 +155,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+
+    <script src="/assets/vendor/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
 
 </body>
 

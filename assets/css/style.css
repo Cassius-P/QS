@@ -18,6 +18,8 @@
     font-display:auto;font-style:normal;font-weight:400;
 }
 
+< JessikaBis
+=======
 /* ===== Text Classes =====*/
 .textGold{
     color: #DCB97D;
@@ -36,6 +38,7 @@
 }
 
 
+> master
 /* ===== Background ===== */
 
 html {
