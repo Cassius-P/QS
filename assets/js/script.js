@@ -4,6 +4,7 @@ window.onload = function () {
     //createCursor();
     loadParticles();
 
+
 };
 
 
@@ -33,25 +34,63 @@ $('#main').scroll( function() {
         titles.push(name);
     }
 
+
     var parts = document.querySelector("#parts");
     var title = parts.querySelector('h2');
-    var scrolled = this.scrollTop;
+
     title.innerHTML = titles[0];
+    console.log(titles[0]);
 
-    if ( scrolled >= 1000 && scrolled < 2000) {
-        var scrollFrom = (scrolled - 1000)*4 ;
+    var scrolled = this.scrollTop;
+
+    if ( scrolled >= 1000 && scrolled < 2300) {
+
+        var scrollFrom = (scrolled - 1000)*5 ;
         parts.scroll(scrollFrom, 0);
 
 
-    } else if ( scrolled >= 2000){
-        title.innerHTML = titles[1];
+    } else if ( scrolled >= 2500 && scrolled < 4000){
         parts.scrollLeft;
-        var scrollFrom = (scrolled - 2000)*1.5 ;
+        title.innerHTML = titles[1];
+
+        var scrollFrom = (scrolled - 2500) ;
         parts.scroll(scrollFrom, 0);
-        console.log("2000")
+    }else if ( scrolled >= 4600 && scrolled <= 5600){
+        parts.scrollLeft;
+        title.innerHTML = titles[2];
+
+        var scrollFrom = (scrolled - 4600)*3;
+        parts.scroll(scrollFrom, 0);
+        //Verif si page d'accueil partie services
+        if(document.querySelector("#services") && scrolled >= 5100){
+            disableScroll();
+            var scrollServices = (scrolled - 4600);
+            document.querySelector("#services").scroll(scrollServices,0);
+        }
+    }else if(scrolled >= 5600){
+        parts.scrollLeft;
+        title.innerHTML = titles[3];
+
+        var scrollFrom = (scrolled - 5600)*5;
+        parts.scroll(scrollFrom, 0);
     }
     console.log(scrolled);
 });
+
+function disableScroll() {
+    // Get the current page scroll position
+    var services = document.querySelector("#services");
+    var scrollTop = services.scrollTop;
+    var scrollLeft =  services.scrollLeft;
+
+    var main = document.querySelector("#main");
+
+        // if any scroll is attempted, set this to the previous value
+        main.onscroll = function() {
+            console.log(scrollLeft + " - " + scrollTop);
+
+        };
+}
 
 
 /* ===== Team on hover ===== */

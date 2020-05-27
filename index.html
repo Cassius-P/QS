@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 
 
@@ -56,9 +56,11 @@
                 </span>
             </div>
         </div>
-        <div id="parts" class="fullScreen">
+
+        <div id="parts" class="">
             <h2 id="titleScroll"></h2>
         </div>
+        
         <div id="who" data-title="qui sommes nous" class="fullScreen textContent">
             <span>
                    Lorem ipsum dolor sit amet, consectetur adipiscing. <br>
@@ -133,11 +135,88 @@
 
             </section>
         </div >
-        <div class="fullScreen textContent">
+        <div class="fullScreen textContent" id="services" data-title="nos services">
 
+            <section class="services">
+                <span>
+                    Solutions
+                </span>
+                <span>
+                    solutions web
+                </span>
+                <span>
+                    solutions mobile
+                </span>
+                <span>
+                    solutions concept
+                </span>
+                <span>
+                    solutions concept
+                </span>
+            </section>
+            <section class="services">
+                <span>
+                    prototypage
+                </span>
+                <span>
+                    solutions web
+                </span>
+                <span>
+                    solutions mobile
+                </span>
+                <span>
+                    solutions concept
+                </span>
+            </section>
         </div>
-        <div class="fullScreen textContent">
+        <div class="fullScreen textContent" id="contact" data-title="nous contacter">
+            <section>
+                <div>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <span class="textGold">Quisque feugiat urna !</span>
+                </div>
+                <hr>
+                <div>
+                    <div>
+                        <span>
+                            201 rue Judaique
+                        </span>
+                        <span>
+                            33000 Bordeaux
+                        </span>
+                    </div>
+                    <span> intouch@quanticalsolutions.com</span>
+                    <span class="textBold">
+                        06.29.30.10.27
+                    </span>
+                </div>
 
+            </section>
+            <section>
+                <form>
+                    <div>
+
+                        <label>
+                            Nom et prénom
+                            <input type="text" placeholder="DUPONT Jean">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Email
+                            <input type="email" placeholder="exemple@mail.com">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Message
+                            <!--<input type="text" placeholder="Tout ce que vous avez envie de nous raconter">-->
+                            <textarea  placeholder="Tout ce que vous avez envie de nous raconter" rows="5"></textarea>
+                        </label>
+                    </div>
+                    <button type="">Envoyer</button>
+                </form>
+            </section>
         </div>
     </div>
 
