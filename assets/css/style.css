@@ -102,7 +102,7 @@ body{
 #vertical{
     background: red;
     height:75%;
-    width: 15%;
+    width: 14%;
 }
 /* ===== Title ===== */
 
@@ -368,4 +368,49 @@ hr{
     padding: 1%;
     width: 15%;
     text-transform: uppercase;
+}
+
+/*===== Panier ======*/
+#cart{
+    width: 79%;
+    height: 100vh;
+    padding: 14% 7% 0 14%;
+}
+#cart h1{
+    font-family: "GoodHeadline";
+}
+#cart table{
+    width: 100%;
+    text-align: left;
+    font-family: "GoodHeadline";
+    border-collapse: collapse;
+}
+#cart td{
+    height: 15%
+}
+#cart tr:nth-child(n+2) {
+    border-bottom: 2px solid #DCB97D;
+}
+#cart td:nth-child(odd), th:nth-child(odd){
+    width: 18%;
+}
+#cart td:nth-child(2), th:nth-child(2){
+    width: 45%;
+}
+#cart td:nth-child(n+3), th:nth-child(n+3){
+    width:9%;
+}
+#cart th{
+    color: #7f7f7f;
+    text-transform: uppercase;
+}
+#cart .name {
+    text-transform: uppercase;
+}
+#cart .infos{
+    color: white;
+}
+.buttonQuantity button{
+    width: 20%;
+    padding: 0 1% 0 1%
 }
