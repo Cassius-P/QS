@@ -13,13 +13,13 @@ black #0a0a0a */
 /* ===== HEADER ===== */
 
 .eventHeader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     background-image: url("../images/event/mimi-thian-ZKBzlifgkgw-unsplashflou.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     font-weight: bold;
 }
 
@@ -29,9 +29,9 @@ black #0a0a0a */
 }
 
 .pageTitle {
+    padding: 0% 10%;
     font-size: 5em;
     color: #f8f8f8;
-    padding: 0% 10%;
 }
 
 .eventHour {
@@ -47,12 +47,12 @@ black #0a0a0a */
 /* ===== DESCRIPTION ===== */
 
 #eventDetails {
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.container {
+.articleContainer {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -62,16 +62,16 @@ black #0a0a0a */
     text-align: left;
 }
 
-.content {
-    color: #f8f8f8;
-    width: 50%;
+.articleContent {
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    color: #f8f8f8;
 }
 
-.content>p {
+.articleContent>p {
     /* width: 40%; */
     padding: 0% 5%;
     text-align: justify;
@@ -86,19 +86,19 @@ black #0a0a0a */
 }
 
 .articleTitle {
-    color: #deb571;
     padding: 5% 15% 0 15%;
+    color: #deb571;
 }
 
-.content>button {
-    color: #f8f8f8;
-    background-color: #deb571;
+.articleContent>button {
     width: 25%;
     height: auto;
+    background-color: #deb571;
     border-style: none;
+    color: #f8f8f8;
 }
 
-.container>img {
+.articleContainer>img {
     width: 45%;
     height: auto;
 }
@@ -116,8 +116,8 @@ black #0a0a0a */
 }
 
 .formTitle {
-    color: #deb571;
     padding: 0 5%;
+    color: #deb571;
 }
 
 .formDetails {
@@ -130,22 +130,25 @@ black #0a0a0a */
     color: #f8f8f8;
 }
 
+label {
+    color: #f8f8f8
+}
+
 /* .formIdentity {
     display: inline-block
 } */
 
 .input {
     background-color: #0a0a0a;
-    border: #deb571 solid 1px;
 }
 
 .formButton {
-    color: #deb571;
     background-color: #0a0a0a;
     border-bottom: none;
     border-top: #deb571 solid 1px;
     border-left: #deb571 solid 1px;
     border-right: #deb571 solid 1px;
+    color: #deb571;
 }
 
 /* ===== CAROUSEL ===== */
