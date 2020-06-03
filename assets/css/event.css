@@ -46,64 +46,61 @@ black #0a0a0a */
 
 /* ===== DESCRIPTION ===== */
 
-#eventDetails {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.articleTitle {
+    padding: 5% 0 0 18%;
+    color: #deb571;
+    font-size: 2.3em
 }
 
-.articleContainer {
+.firstArticleContainer {
     display: flex;
     position: relative;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    text-align: left;
-}
-
-.articleContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    color: #f8f8f8;
-}
-
-.articleContent>p {
-    /* width: 40%; */
-    padding: 0% 5%;
-    text-align: justify;
+    padding: 0% 0 2.5% 0;
 }
 
 .firstText {
-    margin: 0 5% 0 10%;
+    padding: 0 12% 0 18%;
+    text-align: left;
+    color: #f8f8f8;
+}
+
+.rightImg {
+    height: auto;
+    width: 45%;
+}
+
+.secondArticleContainer {
+    display: flex;
+    position: relative;
+    padding: 2.5% 0 2.5% 0;
+}
+
+.leftImg {
+    padding-top: 1%;
+    height: 65%;
+    width: 50%;
 }
 
 .secondText {
     margin: 0 10% 0 5%;
+    justify-content: flex-start;
 }
 
-.articleTitle {
-    padding: 5% 15% 0 15%;
+.articleTarif {
+    padding-top: 5%;
     color: #deb571;
+    font-size: 2.3em
 }
 
-.articleContent>button {
-    width: 25%;
-    height: auto;
+.priceButton {
+    width: 40%;
+    height: 10%;
     background-color: #deb571;
     border-style: none;
     color: #f8f8f8;
 }
 
-.articleContainer>img {
-    width: 45%;
-    height: auto;
-}
-
-/* ===== FORMULAIRE ===== */
+/* ===== FORMULAIRE j'arrive pas à positionner les éléments ===== */
 
 #eventForm {
     /*   
@@ -112,7 +109,7 @@ black #0a0a0a */
     justify-content: center;
     text-align: center;
     align-items: center; */
-    margin: 0 20%
+    margin: 0 27%;
 }
 
 .formTitle {
@@ -121,22 +118,21 @@ black #0a0a0a */
 }
 
 .formDetails {
+    margin: 0 auto;
+    position: relative;
     display: flex;
     justify-content: flex-start;
 }
 
 .formBox {
-    display: block;
+    margin: 5% -2% 0% 4%;
+    display: inline-grid;
     color: #f8f8f8;
 }
 
 label {
     color: #f8f8f8
 }
-
-/* .formIdentity {
-    display: inline-block
-} */
 
 .input {
     background-color: #0a0a0a;
