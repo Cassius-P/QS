@@ -21,19 +21,19 @@
 
 /* ===== Text Classes =====*/
 .textGold{
-    color: #DCB97D;
+    color: #DCB97D!important;
 }
 
 .textWhite{
-    color: white;
+    color: white!important;
 }
 
 .textGrey {
-    color:#1a1a1a;
+    color:#1a1a1a!important;
 }
 
 .textBold{
-    font-weight: bold;
+    font-weight: bold!important;
 }
 
 
@@ -487,15 +487,22 @@ h2{
     font-family: "GoodHeadline";
     border: 2px solid #DCB97D;
     background: transparent;
-    padding: 1% 5%;
+    padding: 0.1em 1.5em;
     letter-spacing: 0.1em;
-}
+    text-transform: UPPERCASE;
 
+}
+.buttonBordered:hover{
+    color: white;
+    background: #DCB97D;
+    cursor: pointer;
+}
 #coordinates{
     width: 86%;
+    height:125vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #coordinates div{
     display: flex;
@@ -503,14 +510,19 @@ h2{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#coordinates div:first-of-type{
-    height: 18%;
+#coordinates>div:first-of-type{
+    height: 15%;
 }
-#coordinates div:nth-child(3){
-    height: 9%;
+#coordinates>div:nth-child(3){
+    height: 10%;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-#coordinates div:last-of-type{
-    height:55%;
+#coordinates>div:nth-child(3) div{
+    width: 35%;
+}
+#coordinates>div:last-of-type{
+    height:50%;
 }
 #coordinates div span {
     width: 100%;
@@ -519,25 +531,25 @@ h2{
     font-size: 1.6em;
     text-transform: uppercase;
 }
+label {
+    font-family: "GoodHeadline";
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2em;
+}
 .labelMid{
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 47%;
     color: #DCB97D;
-    font-family: "GoodHeadline";
     height: 5.5em;
-    text-transform: uppercase;
-    font-size: 1.2em;
 }
 .labelFull{
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-family: "GoodHeadline";
     color: #DCB97D;
     height: 5.5em;
-    text-transform: uppercase;
-    font-size: 1.2em;
 }
 .labelFull input, .labelMid input{
     color: white;
@@ -547,4 +559,102 @@ h2{
     padding: 1em;
     width: calc(100% - 2em)
 }
+.labelQuarter{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    color: white;
+    font-weight: bolder;
+    line-height: 2em;
+}
+.labelQuarter>div , .labelFull>div{
+    width: 100%!important;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+}
+.cardQ{
+    color: white;
+    background: #222222;
+    border: none;
+    font-size: 14px;
+    padding: 1em;
+    width: 16%!important;
+    text-align: center;
+}
+.cardF{
+    border: none!important;
+    width: 100%!important;
+}
+#payment{
+    width: 86%;
+    height:110vh;
+    display: flex;
+    flex-direction: column;
+}
+#payment>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+#payment>div span {
+    width: 100%;
+    color: #DCB97D;
+    font-family: "GoodHeadline";
+    font-size: 1.6em;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+#method{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+#method>div:first-child{
+    width: 60%;
+}
 
+#method>div:nth-child(2){
+    width: 30%;
+}
+#addCb{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#card{
+    width: 100%;
+    height: 70%;
+    border-radius: 0.5em;
+    background: linear-gradient( to bottom, rgba(220, 185, 125, 0.95),rgba(220, 185, 125, 0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#card>div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 33%;
+}
+#card > div > label{
+    width: 85%!important;
+    color:white!important;
+    font-weight: bolder;
+    line-height: 2em;
+}
+#indic{
+    width: 42.5%;
+    height: inherit;
+}
+#indic>span{
+    font-size: 3.3em!important;
+}
+
+#verso{
+    width: 42.5%;
+}
