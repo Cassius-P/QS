@@ -658,3 +658,26 @@ label {
 #verso{
     width: 42.5%;
 }
+#recap{
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#myOrder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#myOrder>div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#myOrder>div:first-of-type{
+    justify-content: space-between;
+    border-bottom: #DCB97D 2px solid;
+}
+#myOrder>div:last-of-type{
+    flex-wrap: wrap;
+}
