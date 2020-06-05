@@ -94,6 +94,7 @@ black #0a0a0a */
 }
 
 .similarBloc {
+  
     display: flex;
     flex-direction: column;
     width: 20%;
