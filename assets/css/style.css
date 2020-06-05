@@ -46,6 +46,7 @@ html {
 body{
     background: #1a1a1a;
     margin: 0;
+    overflow-x: hidden;
 }
 
 #bg{
@@ -664,6 +665,9 @@ label {
     flex-direction: column;
     justify-content: space-around;
 }
+#recap span{
+    font-family: "GoodHeadline";
+}
 #myOrder{
     width: 100%;
     display: flex;
@@ -678,6 +682,51 @@ label {
     justify-content: space-between;
     border-bottom: #DCB97D 2px solid;
 }
-#myOrder>div:last-of-type{
+#myOrder>div:first-of-type>span:first-of-type{
+     text-transform: uppercase;
+     font-size: 2em;
+     letter-spacing: 0.1em;
+ }
+#myOrder>div:first-of-type>span:last-of-type{
+    font-weight: bold;
+}
+#myOrder>div:nth-child(2){
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.recapItem{
+    width: 21%;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.5em 0;
+}
+.recapItem>div{
+    background-image: url("../images/cart/florian-olivo-4hbJ-eymZ1o-unsplash.png");
+    width: 100%;
+    height: 40%;
+}
+.recapItem>span:first-of-type{
+    text-transform: uppercase;
+    font-size: 1.7em;
+    letter-spacing: 0.1em;
+}
+.recapItem>span:nth-child(3){
+    text-transform: capitalize;
+    font-size: 1em;
+}
+.recapItem>span:last-of-type{
+    font-size: 1.2em;
+}
+#myOrder>div:last-of-type{
+    width: fit-content;
+    border-bottom: 2px solid #DCB97D;
+}
+#myOrder>div:last-of-type>span{
+    font-size: 2em;
+    white-space: pre;
+    letter-spacing: 0.1em;
 }
