@@ -1,0 +1,127 @@
+/* =====  ===== */
+
+* {
+    color: #f8f8f8;
+}
+
+/* gold #deb571
+white #f8f8f8
+silver #cfcdcc
+grey #4a4a49
+black #0a0a0a */
+
+/* ===== HEADER ===== */
+
+.actuHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/event/mimi-thian-ZKBzlifgkgw-unsplashflou.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+}
+
+.pageTitle {
+    padding: 0% 10%;
+    font-size: 3em;
+    color: #f8f8f8;
+}
+
+.subtitlePage {
+    font-size: 1.5em;
+    color: #f8f8f8;
+}
+
+.actuDate {
+    font-size: 1em;
+    color: #deb571;
+}
+
+/* ===== FIRST PART ===== */
+
+.paragraphTitle {
+    padding-left: 25%;
+    color: #deb571;
+}
+
+.paragraph {
+    padding: 5% 25%;
+}
+
+/* ===== IMAGES ===== */
+
+.images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftImg {
+    width: 32%;
+}
+
+.rightImg {
+    width: 45%;
+    height: fit-content;
+}
+
+.largeImg {
+    width: 90%;
+    padding: 0% 12.5% 5% 7.25%;
+    height: fit-content;
+}
+
+
+/* ===== GOLD LINES ===== */
+
+.goldLine {
+    padding: 0.3% 0;
+    border-top: #deb571 solid 1px;
+}
+
+/* ===== SIMILAR ===== */
+.similarTitle{
+    color: #deb571;
+    padding-left: 7%;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.similarLine {
+    display: flex;
+    justify-content: space-around;
+}
+
+.similarBloc {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.similarBloc>div{
+
+    border: #deb571 solid 1px;
+}
+
+.similarBloc>div>h1 {
+    padding: 2%;
+    color: #deb571;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.similarBloc>div>p {
+    padding: 2%;
+    color: #f8f8f8;
+    font-size: 0.9em;
+}
+
+.similarBloc>div>button {
+    color: #deb571;
+    background-color: #0a0a0a;
+    border: #deb571 solid 1px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
