@@ -118,6 +118,8 @@ black #0a0a0a */
     justify-content: center;
     text-align: center;
     align-items: center; */
+
+
     margin: 0 27%;
 }
 
@@ -127,19 +129,33 @@ black #0a0a0a */
 }
 
 .formDetails {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ */
+ justify-content: space-around;
     margin: 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
 }
-
+.formIdentity{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.formIdentityBis{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .formBox {
     margin: 5% -2% 0% 4%;
     display: inline-grid;
     color: #f8f8f8;
 }
 
-label {
+.label {
     color: #f8f8f8
 }
 
