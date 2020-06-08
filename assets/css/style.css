@@ -379,7 +379,6 @@ input:focus, textarea:focus{
 #cart{
     width: 79%;
     height: 100%;
-    padding:9% 7% 0 14%;
 }
 h2{
     font-family: "GoodHeadline";
@@ -665,8 +664,28 @@ label {
     flex-direction: column;
     justify-content: space-around;
 }
+#recap>div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 #recap span{
     font-family: "GoodHeadline";
+}
+.modify{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #DCB97D 2px solid;
+}
+.modify>span:first-of-type {
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+.modify>span:last-of-type {
+    font-weight: bold;
 }
 #myOrder{
     width: 100%;
@@ -677,18 +696,6 @@ label {
     width: 100%;
     display: flex;
     flex-direction: row;
-}
-#myOrder>div:first-of-type{
-    justify-content: space-between;
-    border-bottom: #DCB97D 2px solid;
-}
-#myOrder>div:first-of-type>span:first-of-type{
-     text-transform: uppercase;
-     font-size: 2em;
-     letter-spacing: 0.1em;
- }
-#myOrder>div:first-of-type>span:last-of-type{
-    font-weight: bold;
 }
 #myOrder>div:nth-child(2){
     flex-wrap: wrap;
@@ -729,4 +736,19 @@ label {
     font-size: 2em;
     white-space: pre;
     letter-spacing: 0.1em;
+}
+#personal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#personal>div{
+    width: 45%;
+}
+#personal>div>div:last-of-type{
+    padding-top: 5%;
+    flex-direction: column;
+    display: flex;
+    line-height: 1.5em;
+    font-size: 1.1em;
 }
