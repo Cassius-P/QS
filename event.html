@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <!-- <div id="bg"></div> -->
+    <div id="bg"></div>
     <div class="cursor cursor--small"></div>
     <canvas class="cursor cursor--canvas" resize></canvas>
     <div id="nav">
@@ -82,7 +82,7 @@
 
             </div>
 
-            <div class="secondArticleContainer  fullScreen">
+            <div class="secondArticleContainer ">
                 <img class="leftImg" src="./assets/images/event/airam-dato-on-t_rxW1yGpSU-unsplash.png" alt="">
 
                 <div class="articleContent secondText">
@@ -101,26 +101,28 @@
 
 
         <section id="eventForm" class="goldBorder">
-            <h1 class="formTitle">INSCRIPTION</h1>
-            <form class="formDetails" action="">
-                <div class="formIdentity">
-                    <div class="formBox">
+            <form action="">
+                <div>
+                    <h1 class="formTitle">INSCRIPTION</h1>
+                </div>
+                <div class="formDetails">
+                    <div class="formBoxMid">
                         <label for="name">NOM</label>
-                        <input class="input goldBorder type=" text" name="name"></div>
-
-                    <div class="formBox">
+                        <input class="input goldBorder" type="text" name="name">
+                    </div>
+                    <div class="formBoxMid">
                         <label for="surname">PRENOM</label>
-                        <input class="input goldBorder" type="text" name="surname"></div>
-                </div>
-
-                <div class="formIdentityBis">
-                    <div class="formBox">
+                        <input class="input goldBorder" type="text" name="surname">
+                    </div>
+                    <div class="formBoxFull">
                         <label for="mail">ADRESSE E-MAIL</label>
-                        <input class="input goldBorder" type="mail" name="mail"></div>
-
-
-                    <button class="formBox formButton" type="submit">S'INSCRIRE</button>
+                        <input class="input goldBorder" type="text" name="mail">
+                    </div>
+                    <div>
+                        <button class="formButton" type="submit">S'INSCRIRE</button>
+                    </div>
                 </div>
+
             </form>
         </section>
 
