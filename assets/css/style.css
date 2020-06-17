@@ -58,6 +58,12 @@ body{
 
 }
 
+.j-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ===== Cursor ===== */
 .cursor {
     position: fixed;
@@ -766,4 +772,40 @@ label {
     width: 32%;
     min-height: 85%;
     border: 2px solid #DCB97D;
+}
+
+
+/*===== Conexxion =====*/
+#connect{
+    width: 21%;
+    height: 50%;
+    text-align: center;
+}
+#connect>a{
+    text-decoration: none;
+    font-family: GoodHeadline;
+    letter-spacing: 0.1em;
+}
+#connect>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    text-align: left;
+}
+#connect>form>div{
+    width: 100%;
+}
+#inputs{
+    height: 12em;
+}
+#inputs>.labelFull{
+    height: 4.5em;
+}
+#connect-s{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
