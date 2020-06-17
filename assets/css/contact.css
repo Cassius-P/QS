@@ -1,0 +1,103 @@
+/* =====  ===== */
+
+* {
+    color: #f8f8f8;
+}
+
+/* gold #deb571
+white #f8f8f8
+silver #cfcdcc
+grey #4a4a49
+black #0a0a0a */
+
+#contactPage {
+    /* height: 100vh; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* ===== INFORMATION ===== */
+
+.contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0% 9%;
+    width: 17%;
+}
+
+.contactInfo>:nth-child(3) {
+    color: #deb571;
+}
+
+.title {
+    color: #deb571;
+    font-size: 5em;
+}
+
+p {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 9% 0;
+}
+
+.line {
+    border-top: #f8f8f8 solid 1px;
+    padding-bottom: 10%;
+}
+
+.direction {
+    padding: 0;
+    margin: 0;
+}
+
+.tel, .mail {
+    padding: 8% 0;
+}
+
+/* ===== FORMULAIRE ===== */
+
+.formContact{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 15%;
+    width: 25%;
+
+}
+
+.formBox{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+label{
+    color: #deb571;
+    margin: 3% 0 1% 0;
+}
+input, textarea{
+    border: #deb571 solid 1px;
+    background-color: #0a0a0a;
+}
+textarea{
+    width: 100%;
+    height: 5em;
+}
+input{
+    width: 80%;
+    height: 2.5em;
+}
+.formButton {
+    background-color: #0a0a0a;
+    border: #deb571 solid 1px;
+    color: #deb571;
+    margin-top: 5%;
+    padding: 3% 1% 0 3%;
+}
+
+.goldBorder {
+    border: 1px solid #deb571;
+}
