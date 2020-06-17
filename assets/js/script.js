@@ -39,7 +39,6 @@ $('#main').scroll( function() {
     var title = parts.querySelector('h2');
 
     title.innerHTML = titles[0];
-    console.log(titles[0]);
 
     var scrolled = this.scrollTop;
 
@@ -74,7 +73,7 @@ $('#main').scroll( function() {
         var scrollFrom = (scrolled - 5600)*5;
         parts.scroll(scrollFrom, 0);
     }
-    console.log(scrolled);
+    //console.log(scrolled);
 });
 
 function disableScroll() {

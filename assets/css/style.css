@@ -55,8 +55,13 @@ body{
     height : 100vh;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
 
+}
+
+.j-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ===== Cursor ===== */
@@ -191,7 +196,7 @@ body{
 /* ===== Content ===== */
 #main{
     position: fixed;
-    overflow-y: scroll;
+    overflow-y: auto;
     overscroll-behavior: contain;
     top: 0; right: 0; bottom: 0; left: 0;
     flex-direction: column;
@@ -396,14 +401,14 @@ h2{
 #cart tr:nth-child(n+2) {
     border-bottom: 2px solid #DCB97D;
 }
-#cart td:nth-child(odd), th:nth-child(odd){
+#cart td:nth-child(odd),#cart th:nth-child(odd){
     width: 18%;
 }
-#cart td:nth-child(2), th:nth-child(2){
+#cart td:nth-child(2),#cart th:nth-child(2){
     width: 45%;
     padding-left: 2%;
 }
-#cart td:nth-child(n+3), th:nth-child(n+3){
+#cart td:nth-child(n+3), #cart th:nth-child(n+3){
     width:9%;
 }
 #cart th{
@@ -751,4 +756,56 @@ label {
     display: flex;
     line-height: 1.5em;
     font-size: 1.1em;
+}
+
+
+/*===== Calendar Events =====*/
+#calendarContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#calendar{
+    max-width: 62%;
+}
+#eventInfos{
+    width: 32%;
+    min-height: 85%;
+    border: 2px solid #DCB97D;
+}
+
+
+/*===== Conexxion =====*/
+#connect{
+    width: 21%;
+    height: 50%;
+    text-align: center;
+}
+#connect>a{
+    text-decoration: none;
+    font-family: GoodHeadline;
+    letter-spacing: 0.1em;
+}
+#connect>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    text-align: left;
+}
+#connect>form>div{
+    width: 100%;
+}
+#inputs{
+    height: 12em;
+}
+#inputs>.labelFull{
+    height: 4.5em;
+}
+#connect-s{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
