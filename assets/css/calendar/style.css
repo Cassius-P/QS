@@ -1,8 +1,33 @@
+/* gold #deb571
+white #f8f8f8
+silver #cfcdcc
+grey #4a4a49
+black #0a0a0a */
 
 .fc-left {
     min-width: 100%;
     display: flex;
 }
-.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td {
-    border-color: #DCB97D!important;
+
+.fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td {
+    border-color: #DCB97D;
+}
+
+.fc-head-container {
+    border: none!important;
+}
+
+.fc-day-header {
+    color: #f8f8f8;
+    text-transform: uppercase;
+}
+
+.fc-day-number {
+    color: #deb571;
+}
+
+.fc-bgevent {
+    background-color: #deb571;
+    color: #f8f8f8;
+    opacity: 50%;
 }

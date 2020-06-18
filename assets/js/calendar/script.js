@@ -34,8 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'The Title', // a property!
             start: '2020-06-14', // a property!
             end: '2020-06-14', // a property! ** see important note below about 'end' **
-            rendering:'background'
-        }]
+            rendering:'background',
+        }],
+        showNonCurrentDates: false,
+        fixedWeekCount: false
     });
 
 
