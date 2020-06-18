@@ -803,6 +803,9 @@ label {
 #inputs>.labelFull{
     height: 4.5em;
 }
+#inputs>div>label{
+    text-transform: initial;
+}
 #connect-s{
     height: 30%;
     display: flex;

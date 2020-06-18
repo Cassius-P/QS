@@ -192,4 +192,9 @@
     #personal>div{
         width: 100%;
     }
+
+    /*===== Connexion =====*/
+    #connect{
+        width: 70%;
+    }
 }
