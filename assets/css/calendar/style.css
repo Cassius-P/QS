@@ -7,6 +7,19 @@ black #0a0a0a */
 .fc-left {
     min-width: 100%;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.fc-header-toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: #deb571;
+    text-transform: uppercase;
 }
 
 .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td {
@@ -30,4 +43,28 @@ black #0a0a0a */
     background-color: #deb571;
     color: #f8f8f8;
     opacity: 50%;
+}
+
+.fc-button-primary {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    transition: all linear 0.15s;
+}
+
+.fc-button-primary:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.fc-icon-chevron-left {
+    content: url('../../images/calendrier/left-arrow.svg');
+    width: 100%;
+    height: auto;
+}
+
+.fc-icon-chevron-right {
+    content: url('../../images/calendrier/right-arrow.svg');
+    width: 100%;
+    height: auto;
 }
